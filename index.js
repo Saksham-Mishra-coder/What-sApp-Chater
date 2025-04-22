@@ -15,7 +15,7 @@ app.use(express.urlencoded({ extended: true })); // Middleware to parse incoming
 app.use(methodOverride('_method')); // Middleware to allow override of HTTP method (e.g., for PATCH/DELETE via POST requests)
 
 // Set up view engine and view directory
-app.set("views", (__dirname, "views")); // Set the "views" folder for the EJS templates
+app.set("views", path.join(__dirname, "views")); // Set the "views" folder for the EJS templates
 app.set("view engine", "ejs"); // Set the view engine to EJS for rendering views
 app.use(express.static(path.join(__dirname, "public"))); // Serve static files (like CSS/JS) from the "public" folder
 
