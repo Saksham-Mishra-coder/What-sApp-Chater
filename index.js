@@ -5,6 +5,7 @@ const mongoose = require("mongoose"); // Import mongoose module to interact with
 const path = require("path"); // Import path module for working with file paths
 const Chat = require("./models/Chat"); // Import the Chat model (this should be a Mongoose model for chat documents)
 const methodOverride = require('method-override'); // Import method-override for handling HTTP verbs like PUT and DELETE via forms
+require('dotenv').config();
 
 // Initialize express app
 const app = express();
@@ -93,6 +94,6 @@ app.get("/", (req, res) => {
 });
 
 // Start the server on port 8080
-app.listen(8080, () => {
+app.listen(process.env.PORT, () => {
     console.log("port is listening 8080"); // Log a message when the server starts successfully
 });
