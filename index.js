@@ -94,6 +94,6 @@ app.get("/", (req, res) => {
 });
 
 // Start the server on port 8080
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT||8080, () => {
     console.log("port is listening 8080"); // Log a message when the server starts successfully
 });
