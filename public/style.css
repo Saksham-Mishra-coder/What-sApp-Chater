@@ -1,0 +1,37 @@
+.chat-box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+    padding: 10px;
+}
+.Chat{
+    background-color: aliceblue;
+    margin-left: 20px ;
+    border-radius: 1rem;
+    display: inline-block;
+    width: 300px;
+}
+.msg{
+    background-color: rgba(15, 140, 113, 0.898);
+    color: white;
+    padding: 2px ;
+    text-align: center;
+}
+.btns{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+.add_btn{
+    background-color: black;
+    color: white;
+}
+
+.add{
+    display: flex;
+    justify-content: center;
+    
+}
+.hadding{
+    text-align: center;
+}

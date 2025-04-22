@@ -1,0 +1,15 @@
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Main{
+
+background: hsl(15, 57%, 53%);
+height: 300px;
+width: 300px;
+text-align: center;
+border: 2px solid;
+border-radius: 10%;
+}
