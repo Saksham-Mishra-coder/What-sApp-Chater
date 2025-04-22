@@ -21,7 +21,7 @@ app.use(express.static(path.join(__dirname, "public"))); // Serve static files (
 
 // MongoDB connection using Mongoose
 async function main() {
-    await mongoose.connect("mongodb://127.0.0.1:27017/Whatsapp"); // Connect to MongoDB running locally
+    await mongoose.connect(process.env.URI); // Connect to MongoDB running locally
 }
 
 // Call main to establish the connection
