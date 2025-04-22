@@ -21,7 +21,10 @@ app.use(express.static(path.join(__dirname, "public"))); // Serve static files (
 
 // MongoDB connection using Mongoose
 async function main() {
-    await mongoose.connect(process.env.URI); // Connect to MongoDB running locally
+    await mongoose.connect(process.env.URI,{
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+      });
 }
 
 // Call main to establish the connection
